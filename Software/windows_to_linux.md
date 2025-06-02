@@ -1,19 +1,17 @@
 # Arch Linux Software
 
-Here is a list of Linux software (FOSS) that replaces the windows counterparts. Most of these can be found in the CachyOS repository, the Arch Linux Repository, or AUR. 
+Listed here are applications I need to use on this system. Most of these can be found in the CachyOS repository, the Arch Linux repository, or AUR. 
 
 ## Communication
 
 ### Discord
 
-Use the official discord package 
 ```shell
 paru -S extra/discord
 ```
 
 ### QQ
 
-Use the AUR package
 ```shell
 paru -S linuxqq
 ```
@@ -22,7 +20,6 @@ paru -S linuxqq
 
 ### Librewolf
 
-Use the CachyOS package
 ```shell
 paru -S aur/librewolf-bin
 ```
@@ -35,7 +32,24 @@ Use the GUI app installer.
 
 ### Lutris
 
-Use the extra repository
 ```shell
 paru -S extra/lutris
+```
+
+### Steam
+
+Complicated process, WIP.
+
+## Remote Desktop
+
+### RustDesk
+
+```shell
+paru -S aur/rustdesk-bin
+```
+
+### Parsec
+
+```shell
+paru -S aur/parsec-bin
 ```
