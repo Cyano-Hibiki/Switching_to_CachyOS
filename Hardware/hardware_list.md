@@ -15,7 +15,7 @@ CachyOS. It is used for daily computing, and runs every game that supports Linux
 - CPU: AMD Ryzen 7 7700X
 - Motherboard: MSI MPG X670E CARBON WIFI
 - RAM: DDR5 64 GiB @ 6000 MT/s
-- GPU (Discrete): AMD Radeon RX 6800XT
+- GPU (Discrete): SAPPHIRE NITRO+ AMD Radeon™ RX 9070 XT GPU
 
 ## Windows Mini PC Mk.0
 
@@ -38,37 +38,36 @@ anyways).
 - RAM: DDR4 32GiB @ 3200 MT/s
 - GPU(Integrated): Intel® HD Graphics 630
 
-## Windows Mini PC Mk.1 (Incoming)
+## Windows Mini PC Mk.1
 
-As of writing (June 5, 2025) this PC has not arrived yet. I found it in a
-listing in CraftComputing's Discord Server. I am lucky to be able to find such a
-rare variant.
+~~As of writing (June 5, 2025) this PC has not arrived yet.~~
 
-This is again an older Mini PC, specifically a Dell OptiPlex 7090 Micro. This is
-a special version of this model featuring one low-profile PCIe expansion slot. I
-intend to install a Yeston RTX 3050 Low Profile into the slot to test if it will
-handle slightly more demanding games. However, my hopes are low, since most of
-the discussions I found online have been suggesting that the power supply via
-the PCIe slot will not be able to handle the 3050 with a 75W TDP. The slot was
-originally populated with an RX 640 with 4GB GDDR5 VRAM at 50W TDP.
+I found it in a listing in CraftComputing's Discord Server. I am lucky to be
+able to find such a rare variant. This is again an older Mini PC, specifically a
+Dell OptiPlex 7090 Micro. This is a special version of this model featuring one
+low-profile PCIe expansion slot.
 
-Currently, several possible solutions are present. I will be testing out the
-3050 since the card is relatively cheap even for brand new ones. If it won't
-work or turns out being unstable, then I will try an AMD 6400 Low Profile card.
-Again, this is a cheap card and for it's price on eBay, I don't really mind
-risking buying used. Another candidate is an Intel Arc A310. However, the
-performance on that card is quite handicapped, so it will be the last option for
-something that fits inside the chassis.
+The original plan was to install a low-profile, low power GPU that can be
+powered solely by the PCIe bus. However, since I purchased a new GPU for my main
+rig, I have the option to use the old 6800 XT for this mini PC.
 
-There is also the option to install a Thunderbolt adapter card, and hook up an
-external GPU chassis. A quick search on eBay suggests that a bare bone eGPU
-chassis can be obtained for 150 to 250 USD, while a used Dell Thunderbolt 3
-expansion card is less than 80 USD as of June 2025. I will also need a PSU for
-the eGPU chassis. This is definitely the most expensive solution, but there
-might be a higher chance of success in terms of getting better graphics
-performance.
+To make it work, I purchased an external GPU dock from AOOSTAR with an OCuLink
+port, as well as a PCIe to OCuLink adapter from Amazon. The reason for not using
+Thunderbolt, a seemingly more popular protocol, is not as obvious initially. I
+spent some time trying to hunt down a Dell branded Thunderbolt add-on card that
+works with my particular mini PC. I ended up purchasing one that ended up being
+not compatible. I bought the AOOSTAR dock without intending to use OCuLink, but
+it turned out to be the saving grace. I'm not going to pretend I understand well
+what OCuLink is or how it works exactly, so here is an
+[Article](https://www.howtogeek.com/what-is-oculink/) that explains things
+pretty nicely.
+
+This machine will complement the main rig pretty well. I already installed a
+couple games with aggressive anti-cheat software. Most plays pretty well.
+Whether it can run some of my creator-related software well remains to be seen.
 
 ### OptiPlex 7090 Micro Hardware
 
 - CPU: Intel Core i7-10700T
 - RAM: DDR4 16 GiB @ 2666 MT/s
+- GPU (via OCuLink): ASUS TUF GAMING Radeon™ RX 6800 XT OC Edition
